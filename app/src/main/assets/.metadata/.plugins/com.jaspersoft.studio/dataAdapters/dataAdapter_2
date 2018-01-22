@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>SQLite Demo</name><driver>org.sqlite.JDBC</driver><username/><password/><savePassword>true</savePassword><url>jdbc:sqlite:/Users/kklai/Projects/TestBed/PDFReporterTest/app/src/main/assets/chinook.db</url><database/><serverAddress/></jdbcDataAdapter>

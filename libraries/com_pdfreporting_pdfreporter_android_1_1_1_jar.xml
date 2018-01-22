@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.pdfreporting:pdfreporter-android:1.1.1@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pdfreporting/pdfreporter-android/1.1.1/382c9faa8686ba90167077089bbeb671c2d98100/pdfreporter-android-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pdfreporting/pdfreporter-android/1.1.1/6b557400b3e2853aeea227ee7485d3a670edd9cb/pdfreporter-android-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.jaspersoft.studio.model.image.command.dialog.ImageCreationDialog">
+		<item value="587" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="47" key="dialogY"/>
+		<item value="427" key="dialogX"/>
+		<item value="618" key="dialogHeight"/>
+		<item value="587" key="dialogWidth"/>
+		<item value="618" key="DIALOG_HEIGHT"/>
+		<item value="427" key="DIALOG_X_ORIGIN"/>
+		<item value="24" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.jface.dialogs.ImageSelectionDialog">
+		<item value="587" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="47" key="dialogY"/>
+		<item value="427" key="dialogX"/>
+		<item value="618" key="dialogHeight"/>
+		<item value="587" key="dialogWidth"/>
+		<item value="618" key="DIALOG_HEIGHT"/>
+		<item value="427" key="DIALOG_X_ORIGIN"/>
+		<item value="24" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog">
+		<item value="825" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="23" key="dialogY"/>
+		<item value="308" key="dialogX"/>
+		<item value="746" key="dialogHeight"/>
+		<item value="825" key="dialogWidth"/>
+		<item value="746" key="DIALOG_HEIGHT"/>
+		<item value="308" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="com.jaspersoft.studio.property.descriptor.expression.dialog.JRExpressionEditor">
+		<item value="750" key="DIALOG_WIDTH"/>
+		<item value="1|.SF NS Text|13.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
+		<item value="23" key="dialogY"/>
+		<item value="345" key="dialogX"/>
+		<item value="680" key="dialogHeight"/>
+		<item value="750" key="dialogWidth"/>
+		<item value="680" key="DIALOG_HEIGHT"/>
+		<item value="345" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-01-22T11:31:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PDFReporterTest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fc9a23a1-5189-4780-8c39-7939a70d694e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SQLite Demo"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select 
+t.TrackId,
+a.Title,
+t.Name,
+g.Name as Genre,
+s.Name as Artist
+from tracks t 
+inner join albums a on t.AlbumId = a.AlbumId
+inner join genres g on t.GenreId=g.GenreId
+inner join artists s on a.ArtistId = s.ArtistId
+order by a.AlbumId, t.TrackId]]>
+	</queryString>
+	<field name="TrackId" class="java.lang.Object"/>
+	<field name="Title" class="java.lang.Object"/>
+	<field name="Name" class="java.lang.Object"/>
+	<field name="Genre" class="java.lang.Object"/>
+	<field name="Artist" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="881690b0-bf3b-4d6b-acd4-2f1650329061"/>
+				<text><![CDATA[Page Header]]></text>
+			</staticText>
+			<image>
+				<reportElement x="330" y="0" width="100" height="100" uuid="20e93a2b-9efc-4500-aa78-5a64f54966c3">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[""]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="30" uuid="5e5535f0-9f04-4a95-b424-2042f92b7554"/>
+				<text><![CDATA[TrackId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="0" width="130" height="30" uuid="a02cf210-4c6c-48f0-bc24-934b044b3eb7"/>
+				<text><![CDATA[Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="150" height="30" uuid="f577f0e6-cd3b-4d27-86c9-63059003a320"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="70" height="30" uuid="bd2cd265-e9b5-45a4-80b6-a380f47f17b4"/>
+				<text><![CDATA[Genre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="0" width="140" height="30" uuid="c3c0b797-f803-4cef-8f20-94d1edd3d5df"/>
+				<text><![CDATA[Artist]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="60" height="30" uuid="0ee41a89-591e-4cb7-9f4e-bb81246962ef"/>
+				<textFieldExpression><![CDATA[$F{TrackId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="0" width="130" height="30" uuid="2148d2bd-c7f6-4d9f-a86f-854bd60f18a5"/>
+				<textFieldExpression><![CDATA[$F{Title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="150" height="30" uuid="ac2863e8-95ac-408e-87f3-adbc71b32e2b"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="70" height="30" uuid="8302b15c-dd84-4cd6-90a9-ea010a730e6a"/>
+				<textFieldExpression><![CDATA[$F{Genre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="0" width="140" height="30" uuid="e129b29f-c251-42ff-b813-d9ef5176da92"/>
+				<textFieldExpression><![CDATA[$F{Artist}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="ae6817a4-a8f0-4e68-969a-b011fa3a4efc"/>
+				<text><![CDATA[Pager Footer]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
