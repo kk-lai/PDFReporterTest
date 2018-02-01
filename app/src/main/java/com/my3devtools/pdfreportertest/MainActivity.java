@@ -37,10 +37,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         copyAsset("report");
         copyAsset("resources");
+        copyAsset("photos");
         String reportFolder = getExternalFilesDir(null) + "/report";
         String resourcesFolder = getExternalFilesDir(null) + "/resources";
-        generateDemoReport(reportFolder+"/PDFReporterTest.jrxml", reportFolder+"/chinook.db",
+        String photosFolder = getExternalFilesDir(null) + "/photos";
+        generateDemoReport(reportFolder+"/photos.jrxml", reportFolder+"/chinook.db",
                 resourcesFolder,
+                photosFolder,
                 reportFolder+"/report.pdf");
     }
 
@@ -76,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    protected void generateDemoReport(String jrxmlFile, String sqliteFile, String resourcesFolder,  String pdfPath)
+    protected void generateDemoReport(String jrxmlFile, String sqliteFile, String resourcesFolder,  String photosFolder, String pdfPath)
     {
         String jrxmlFolder = jrxmlFile.substring(0, jrxmlFile.lastIndexOf('/'));
 
@@ -86,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             repositoryManager.reset();
             repositoryManager.setDefaulReportFolder(jrxmlFolder);
             repositoryManager.setDefaultResourceFolder(resourcesFolder);
+            repositoryManager.addExtraReportFolder(photosFolder);
 
             InputStream isReport = FileResourceLoader.getInputStream(jrxmlFile);
             JasperDesign design = JRXmlLoader.load(isReport);
